@@ -46,7 +46,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="vSJ-Ol-OXU" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-495" y="-103"/>
+            <point key="canvasLocation" x="-508" y="-539"/>
         </scene>
         <!--Home-->
         <scene sceneID="iC3-B5-WP7">
@@ -71,8 +71,8 @@
                                                 <constraint firstAttribute="width" constant="65" id="qKL-pd-kER"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pb-Oh-GBe">
-                                            <rect key="frame" x="89" y="132" width="81" height="50"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Tweet content" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8Pb-Oh-GBe">
+                                            <rect key="frame" x="16" y="102" width="359" height="42"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -83,8 +83,8 @@
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lv-fn-CBb" userLabel="favButton">
-                                            <rect key="frame" x="320" y="147" width="29" height="22"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3lv-fn-CBb" userLabel="favButton">
+                                            <rect key="frame" x="320" y="152" width="29" height="22"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="KXf-RZ-ZR7"/>
                                                 <constraint firstAttribute="width" constant="29" id="tUV-be-Q6m"/>
@@ -96,8 +96,8 @@
                                                 <action selector="favoriteTweet:" destination="ZnS-7D-lrL" eventType="touchUpInside" id="2SK-Me-yTW"/>
                                             </connections>
                                         </button>
-                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WL-SS-Keh" userLabel="retweetButton">
-                                            <rect key="frame" x="261" y="147" width="21" height="22"/>
+                                        <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6WL-SS-Keh" userLabel="retweetButton">
+                                            <rect key="frame" x="260" y="148" width="21" height="32"/>
                                             <constraints>
                                                 <constraint firstAttribute="height" constant="22" id="KtI-WB-I1f"/>
                                                 <constraint firstAttribute="width" constant="21" id="ykd-td-xyj"/>
@@ -131,6 +131,7 @@
                                 <connections>
                                     <outlet property="favButton" destination="3lv-fn-CBb" id="OR4-7T-vNO"/>
                                     <outlet property="profileImageView" destination="0ht-7S-br2" id="3iW-sH-FLs"/>
+                                    <outlet property="retweetButton" destination="6WL-SS-Keh" id="huf-na-Yaw"/>
                                     <outlet property="tweetContent" destination="8Pb-Oh-GBe" id="85s-Az-yCU"/>
                                     <outlet property="userNameLabel" destination="Hah-IH-Oyl" id="BcE-8P-0cn"/>
                                 </connections>
@@ -158,7 +159,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ijw-UV-Gf8" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1735.2" y="9.4452773613193415"/>
+            <point key="canvasLocation" x="1420" y="-636.4317841079461"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="qyR-4F-fcu">
@@ -181,7 +182,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="arm-95-bXN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="161" y="-42"/>
+            <point key="canvasLocation" x="324" y="-556"/>
         </scene>
         <!--Tweet View Controller-->
         <scene sceneID="pv2-Zi-h7j">
@@ -191,8 +192,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sZa-eF-wZk">
-                                <rect key="frame" x="0.0" y="56" width="375" height="128"/>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="sZa-eF-wZk">
+                                <rect key="frame" x="0.0" y="56" width="375" height="158"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="128" id="QKM-Vr-U2T"/>
@@ -230,7 +231,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AA2-tG-sDc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1036" y="656.22188905547227"/>
+            <point key="canvasLocation" x="695.20000000000005" y="622.93853073463276"/>
         </scene>
         <!--Tweet Navigation controller-->
         <scene sceneID="jWN-jG-m38">
@@ -249,7 +250,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PxD-2q-NXD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="96.799999999999997" y="656.22188905547227"/>
+            <point key="canvasLocation" x="-110" y="323"/>
         </scene>
     </scenes>
     <resources>

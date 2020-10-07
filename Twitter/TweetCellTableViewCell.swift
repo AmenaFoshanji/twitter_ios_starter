@@ -16,8 +16,9 @@ class TweetCellTableViewCell: UITableViewCell {
     
     @IBOutlet weak var tweetContent: UILabel!
     
-    @IBOutlet weak var retweetButton: UIButton!
+    //@IBOutlet weak var retweetButton: UIButton!
     
+    @IBOutlet weak var retweetButton: UIButton!
     @IBOutlet weak var favButton: UIButton!
     
     
@@ -53,28 +54,27 @@ class TweetCellTableViewCell: UITableViewCell {
     })
     
 }
-        
     func setRetweeted(_ isRetweeted: Bool) {
         if (isRetweeted) {
             retweetButton.setImage(UIImage(named: "retweet-icon-green@3x.png"), for: UIControl.State.normal)
             retweetButton.isEnabled = false
-        }  else {
+        }else {
             
             retweetButton.setImage(UIImage(named: "retweet-icon.png"), for: UIControl.State.normal)
-            retweetButton.isEnabled = true
+             retweetButton.isEnabled = true
             
         
         }
        
     }
         
-        func setFavoriteTweet(_ isFavorited:Bool){
+        func setFavoriteTweet(_ isFavorited:Bool) {
             favorited = isFavorited
             if (favorited) {
-                favButton.setImage(UIImage(named:"favor-icon-red.png"), for: UIControl.State.normal)
+                favButton.setImage(UIImage(named: "favor-icon-red.png"), for: UIControl.State.normal)
             }
             else {
-                favButton.setImage(UIImage(named:"favor-icon.png"), for: UIControl.State.normal)
+                favButton.setImage(UIImage(named: "favor-icon.png"), for: UIControl.State.normal)
                 
             }
         
